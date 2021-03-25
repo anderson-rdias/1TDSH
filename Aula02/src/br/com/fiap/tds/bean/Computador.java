@@ -12,7 +12,7 @@ public class Computador {
 	public String placaMae;
 
 	public double preco;
-
+	
 	// Métodos -> retorno nome(parametros){}
 	
 	//Não retorna nada e recebe os dados para preencher os atributos

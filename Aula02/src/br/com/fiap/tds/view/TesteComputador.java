@@ -36,7 +36,6 @@ public class TesteComputador {
 		double precoComDesconto = pc1.calcularDesconto(30);
 		//Exibir o resultado
 		System.out.println("Preço com desconto do pc1: " + precoComDesconto);
-		
 	}
 	
 }

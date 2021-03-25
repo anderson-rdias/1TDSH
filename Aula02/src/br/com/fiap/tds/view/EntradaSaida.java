@@ -3,8 +3,10 @@ package br.com.fiap.tds.view;
 import java.util.Scanner;
 
 public class EntradaSaida {
+	
 
 	public static void main(String[] args) {
+		
 		//Ler os dados inseridos pelo usuário
 		//Instanciar um objeto do tipo Scanner
 		Scanner leitor = new Scanner(System.in);
