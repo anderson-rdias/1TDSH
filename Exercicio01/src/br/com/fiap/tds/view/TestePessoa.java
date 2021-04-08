@@ -1,9 +1,8 @@
 package br.com.fiap.tds.view;
 
-//import br.com.fiap.tds.bean.*;
-import br.com.fiap.tds.bean.Elevador;
-import br.com.fiap.tds.bean.Pessoa;
 import java.util.Scanner;
+
+import br.com.fiap.tds.bean.Pessoa;
 
 public class TestePessoa {
 	

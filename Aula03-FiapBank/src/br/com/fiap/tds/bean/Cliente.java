@@ -1,5 +1,6 @@
 package br.com.fiap.tds.bean;
 
+
 public class Cliente {
 
 	//Atributos

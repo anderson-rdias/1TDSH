@@ -9,6 +9,7 @@ import br.com.fiap.tds.bean.Endereco;
 public class Teste {
 
 	public static void main(String[] args) {
+		
 		//Ler os dados do endereço, cliente e conta
 		Scanner leitor = new Scanner(System.in);
 		
@@ -43,11 +44,24 @@ public class Teste {
 		
 		//Atribuir os dados nos objetos
 		//sysout + ctrl espaço
+		endereco.rua = rua;
+		endereco.bairro = bairro;
+		endereco.cep = cep;
+		endereco.complemento = compl;
+		endereco.numero = numero;
 		
+		cliente.nome = nome;
+		cliente.cpf = cpf;
+		cliente.endereco = endereco;
+		
+		cc.saldo = saldo;
+		cc.titular = cliente;
 		
 		//Exibir os dados
+		System.out.println("Número: "+ endereco.getNumero());
+		System.out.println("Saldo: " + cc.saldo + " Nome: " + cc.titular.nome + 
+				" Rua: " + cc.titular.endereco.rua);
 		
 		leitor.close();
 	}
-	
 }
