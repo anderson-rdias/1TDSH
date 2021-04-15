@@ -2,7 +2,6 @@ package br.com.fiap.tds.bean;
 
 public class Funcionario {
 
-	//Atributos
 	private String nome;
 	
 	private long matricula;
@@ -11,29 +10,31 @@ public class Funcionario {
 	
 	private double salario;
 	
-	//Construtores
 	public Funcionario() {}
 	
 	public Funcionario(long matricula) {
+		super();
 		this.matricula = matricula;
 	}
 	
 	public Funcionario(long matricula, String nome) {
-		this.matricula = matricula;
+		super();
 		this.nome = nome;
+		this.matricula = matricula;
 	}
-	
+
 	public Funcionario(long matricula, String nome, Profissao profissao) {
-		this(matricula, nome);
+		super();
+		this.nome = nome;
+		this.matricula = matricula;
 		this.profissao = profissao;
 	}
 	
-	//Métodos
-	public void exibirDadosFuncionario() {
-		System.out.println("Nome: " + nome + " Matrícula: " + matricula + 
-				" Salário: " + salario + " Profissão: " + profissao.getNome() );
+	public String exibirDados() {
+		return "Nome: "+ nome + " matricula: " + matricula + " salario: " + salario +
+					" profissao: " + profissao.getNome();
 	}
-	
+
 	public String getNome() {
 		return nome;
 	}

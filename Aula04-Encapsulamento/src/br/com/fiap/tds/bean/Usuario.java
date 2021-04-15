@@ -45,6 +45,10 @@ public class Usuario {
 		 validarUsuario();
 	}
 	
+	public void verificarPermissao() {
+		validarUsuario();
+	}
+	
 	private void validarUsuario() {
 		
 	}
